@@ -11,7 +11,7 @@ const greaterThan = function(val,chk, orEqual){
         return val >= chk ? true : false;
 
     }
-}
+};
 
 const lessThan = function(val,chk, orEqual){
 
@@ -21,7 +21,7 @@ const lessThan = function(val,chk, orEqual){
         return val <= chk ? true : false;
 
     }
-}
+};
 
 console.log('Coding challenge tips & totals');
 
@@ -59,6 +59,47 @@ let john = {
 
 const data = john.calTips();
 console.log(data);
+
+
+/// *********************************************************************************************************
+
+let testIt = function(myArray,chumpVar){
+
+    if (!myArray || myArray.length === 0){
+        return 'Array is foobar';
+    } else {
+        return 'Expected';
+    }
+};
+
+/// array does not exist... play around a bit
+console.log(testIt());
+
+
+// easy stack
+
+let stack = [];
+let items = 10;
+
+for (let i = 0; i <  items; i++){
+    stack.push( i);
+}
+
+console.log("Stack Dump -> " + stack);
+items = stack.length;
+
+for (let i = 0; i < items; i++) {
+     console.log('Pop -> ' + stack.pop());
+}
+
+
+
+
+
+
+
+
+
 
 
 
