@@ -30,9 +30,9 @@ let john = {
 
             // Calcuate totals
             this.totals[i] = (this.spent[i] + this.tips[i]);
-            this.results[i] = this.fullName + ' Results: Bill -> '
-                + this.spent[i] + ' Tip -> ' + this.tips[i].toFixed(2)
-                + ' Total -> ' + this.totals[i].toFixed(2);
+            this.results[i] = this.fullName + ' Results: Bill -> $'
+                + this.spent[i] + ' Tip -> $' + this.tips[i].toFixed(2)
+                + ' Total -> $' + this.totals[i].toFixed(2);
         }
        // return this.fullName + ' Results: Bill -> ' + this.spent + ' Tip -> ' + tips[i] + ' Total -> ' + totals[i];
 
