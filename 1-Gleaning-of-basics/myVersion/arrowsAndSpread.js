@@ -66,4 +66,14 @@ const myArray = ['first','second','third'];
 const [first,second] = myArray;
 console.log(first + ' : ' + second);
 
+
+// lets do both at once
+const a1 = [1,2];
+const a2 = [3,4,5];
+const [x,y,z] = [...a1,...a2];
+
+console.log(x);
+console.log(y);
+console.log(z);
 // Revisit spread & destructure after classes are nailed down better
+
