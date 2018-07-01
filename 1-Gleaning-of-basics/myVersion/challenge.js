@@ -9,8 +9,7 @@
 
 console.log('Coding challenge tips & totals');
 
-var john;
-john = {
+let john = {
     fullName  : 'John Smith',
     spent  : [124, 48, 268, 128],
     calTips: function () {
@@ -18,7 +17,7 @@ john = {
         this.totals = [];
         this.results = [];
 
-        for (var i = 0; i < this.spent.length; i++) {
+        for (let i = 0; i < this.spent.length; i++) {
             if (this.spent[i] < 50) {
                 this.tips[i] = this.spent[i] * .20;
             }
@@ -41,7 +40,7 @@ john = {
     }
 };
 
-var data = john.calTips();
+const data = john.calTips();
 console.log(data);
 
 
