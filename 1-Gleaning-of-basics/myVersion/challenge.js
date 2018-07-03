@@ -1,4 +1,3 @@
-
 // Amount spent at restaurants
 
 // var spent = [124,48,268];
@@ -10,8 +9,8 @@
 console.log('Coding challenge tips & totals');
 
 let john = {
-    fullName  : 'John Smith',
-    spent  : [124, 48, 268, 128],
+    fullName: 'John Smith',
+    spent: [124, 48, 268, 128],
     calTips: function () {
         this.tips = [];
         this.totals = [];
@@ -34,7 +33,7 @@ let john = {
                 + this.spent[i] + ' Tip -> $' + this.tips[i].toFixed(2)
                 + ' Total -> $' + this.totals[i].toFixed(2);
         }
-       // return this.fullName + ' Results: Bill -> ' + this.spent + ' Tip -> ' + tips[i] + ' Total -> ' + totals[i];
+        // return this.fullName + ' Results: Bill -> ' + this.spent + ' Tip -> ' + tips[i] + ' Total -> ' + totals[i];
 
         return this.results;
     }

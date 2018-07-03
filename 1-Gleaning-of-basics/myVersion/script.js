@@ -1,4 +1,3 @@
-
 /*************************************************
  * Function Statements and Expressions
  */
@@ -7,24 +6,24 @@ var name = 'Bar';
 
 
 // Declaritive
-function myFunc(job,name){
+function myFunc(job, name) {
     return name + '::' + job;
 }
 
-console.log(myFunc(job,name));
+console.log(myFunc(job, name));
 
 // function expression
-var functStmt = function(job,name) {
+var functStmt = function (job, name) {
     return name + ':' + job;
 }
 
-console.log(functStmt(job,name));
+console.log(functStmt(job, name));
 
 // Switch Example
 
-var whatYouDo = function(job,firstName){
+var whatYouDo = function (job, firstName) {
 
-    switch (job){
+    switch (job) {
 
         case 'teacher' :
             return firstName + ' I teach';
@@ -41,15 +40,15 @@ var whatYouDo = function(job,firstName){
     }
 }
 
-console.log(whatYouDo('teacher','Lori'));
-console.log(whatYouDo('soldier','Todd'));
-console.log(whatYouDo(true,'Ha Ha'));
-console.log(whatYouDo(false,'Ha Ha'));
+console.log(whatYouDo('teacher', 'Lori'));
+console.log(whatYouDo('soldier', 'Todd'));
+console.log(whatYouDo(true, 'Ha Ha'));
+console.log(whatYouDo(false, 'Ha Ha'));
 
 
 /// Arrays.....
-var names = ['Todd','Dave','Lori'];
-var years = new Array(1990,1969,1950);
+var names = ['Todd', 'Dave', 'Lori'];
+var years = new Array(1990, 1969, 1950);
 
 console.log(names);
 
@@ -67,7 +66,7 @@ console.log(names);
 // goofing around a bit
 var tmp = names;
 
-for (var i = 0; i < 10; i++){
+for (var i = 0; i < 10; i++) {
     tmp[tmp.length] = 'Appended - ' + i;
 }
 console.log(tmp);
@@ -97,14 +96,13 @@ console.log(names.indexOf('Todd') !== -1 ? 'Todd is In The Array' : 'Not in the 
 
 // Amount spent at restaurants
 
-var spent = [124,48,268];
+var spent = [124, 48, 268];
 var tips = [];
 var totals = [];
 
 
 console.log('Coding challenge tips & totals');
-for (var i = 0; i < spent.length; i++)
-{
+for (var i = 0; i < spent.length; i++) {
 
     if (spent[i] < 50) {
         tips.push(spent[i] * .20);

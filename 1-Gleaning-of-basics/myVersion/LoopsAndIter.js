@@ -7,7 +7,7 @@
 //     console.log(i);
 // }
 //
-let nums = [1,2,3,4,5,6,7,8];
+let nums = [1, 2, 3, 4, 5, 6, 7, 8];
 //
 // let iter = nums.length;
 // for (let i = 0; i <= iter; i++){
@@ -20,13 +20,13 @@ let nums = [1,2,3,4,5,6,7,8];
 // }
 
 let i = 0;
-while (i < nums.length){
+while (i < nums.length) {
     console.log(nums[i++]);
     //i++;
 }
 
 // mix types, print checks
-let array = [1,2,'tj','tom','bob',12,true,false,'Here'];
+let array = [1, 2, 'tj', 'tom', 'bob', 12, true, false, 'Here'];
 
 
 // prints everything but strings
@@ -41,7 +41,7 @@ for (let i = 0; i < array.length; i++) {
 for (let i = 0; i < array.length; i++) {
 
 
-    if (typeof array[i] === 'boolean'){
+    if (typeof array[i] === 'boolean') {
         break;
     }
 

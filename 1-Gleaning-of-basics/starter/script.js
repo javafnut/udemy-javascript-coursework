@@ -2,21 +2,6 @@
 // Lecture: Hoisting
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ///////////////////////////////////////
 // Lecture: Scoping
 
@@ -37,7 +22,6 @@ function first() {
     }
 }
 */
-
 
 
 // Example to show the differece between execution stack and scope chain
@@ -61,7 +45,6 @@ function third() {
     console.log(a + b + c + d);
 }
 */
-
 
 
 ///////////////////////////////////////

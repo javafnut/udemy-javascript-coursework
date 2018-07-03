@@ -10,7 +10,7 @@ function calculateAge(year) {
 }
 
 // retirement(1956);
-var retirement = function(year) {
+var retirement = function (year) {
     console.log(65 - (2016 - year));
 }
 
@@ -25,10 +25,9 @@ function foo() {
     var age = 65;
     console.log(age);
 }
+
 foo();
 console.log(age);
-
-
 
 
 /////////////////////////////////////
@@ -67,10 +66,8 @@ function first() {
 function third() {
     var d = 'John';
     //console.log(c);
-    console.log(a+d);
+    console.log(a + d);
 }
-
-
 
 
 /////////////////////////////////////
@@ -89,13 +86,14 @@ function calculateAge(year) {
 var john = {
     name: 'John',
     yearOfBirth: 1990,
-    calculateAge: function() {
+    calculateAge: function () {
         console.log(this);
         console.log(2016 - this.yearOfBirth);
 
         function innerFunction() {
             console.log(this);
         }
+
         innerFunction();
     }
 }

@@ -1,9 +1,7 @@
-
-
 // Try this with some functions and tenenary's
 // just for fun.... need to get a life
 
-const greaterThan = function(val,chk, orEqual){
+const greaterThan = function (val, chk, orEqual) {
 
     if (!orEqual) {
         return val > chk ? true : false;
@@ -13,7 +11,7 @@ const greaterThan = function(val,chk, orEqual){
     }
 };
 
-const lessThan = function(val,chk, orEqual){
+const lessThan = function (val, chk, orEqual) {
 
     if (!orEqual) {
         return val < chk ? true : false;
@@ -27,18 +25,18 @@ console.log('Coding challenge tips & totals');
 
 
 let john = {
-    fullName  : 'John Smith',
-    spent  : [124, 48, 268, 128],
+    fullName: 'John Smith',
+    spent: [124, 48, 268, 128],
     calTips: function () {
         this.tips = [];
         this.totals = [];
         this.results = [];
 
         for (let i = 0; i < this.spent.length; i++) {
-            if (lessThan(this.spent[i],50)) {
+            if (lessThan(this.spent[i], 50)) {
                 this.tips[i] = this.spent[i] * .20;
             }
-            else if (greaterThan(this.spent[i],50,true) && lessThan(this.spent[i],200)) {
+            else if (greaterThan(this.spent[i], 50, true) && lessThan(this.spent[i], 200)) {
                 this.tips[i] = this.spent[i] * .15;
 
             } else {
@@ -51,7 +49,7 @@ let john = {
                 + this.spent[i] + ' Tip -> $' + this.tips[i].toFixed(2)
                 + ' Total -> $' + this.totals[i].toFixed(2);
         }
-       // return this.fullName + ' Results: Bill -> ' + this.spent + ' Tip -> ' + tips[i] + ' Total -> ' + totals[i];
+        // return this.fullName + ' Results: Bill -> ' + this.spent + ' Tip -> ' + tips[i] + ' Total -> ' + totals[i];
 
         return this.results;
     }
@@ -63,9 +61,9 @@ console.log(data);
 
 /// *********************************************************************************************************
 
-let testIt = function(myArray,chumpVar){
+let testIt = function (myArray, chumpVar) {
 
-    if (!myArray || myArray.length === 0){
+    if (!myArray || myArray.length === 0) {
         return 'Array is foobar';
     } else {
         return 'Expected';
@@ -81,15 +79,15 @@ console.log(testIt());
 let stack = [];
 let items = 10;
 
-for (let i = 0; i <  items; i++){
-    stack.push( i);
+for (let i = 0; i < items; i++) {
+    stack.push(i);
 }
 
 console.log("Stack Dump -> " + stack);
 items = stack.length;
 
 for (let i = 0; i < items; i++) {
-     console.log('Pop -> ' + stack.pop());
+    console.log('Pop -> ' + stack.pop());
 }
 
 
